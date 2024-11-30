@@ -11,6 +11,7 @@ set -x
 
 mkdir analysis output
 touch README.md
+echo "# Project Name: DSI Consulting Inc." > README.md
 touch analysis/main.py
 
 # download client data
@@ -20,12 +21,13 @@ unzip rawdata.zip
 ###########################################
 # Complete assignment here
 
-# 1. Create a directory named data
+
+1. Create a directory named data
 mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
- mv ./shell/02_activities/assignments/rawdata ./data/rawdata
+ mv ./rawdata ./data/raw
 # 3. List the contents of the ./data/raw directorylis
-ls ./data/rawdata/rawdata
+ls ./data/raw
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
 mkdir -p ./data/processed/server_logs
 mkdir -p ./data/processed/user_logs
@@ -46,3 +48,4 @@ find ./data/processed -type f > ./data/inventory.txtec
 ###########################################
 
 echo "Project setup is complete!"
+
